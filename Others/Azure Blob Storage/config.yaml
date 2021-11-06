@@ -1,0 +1,4 @@
+---
+azure_storage_connectionstring: "DefaultEndpointsProtocol=https;AccountName=contaarmazluc;AccountKey=kF+7LBtZnYqJwI6OiiiSbYI0xamttUmcLgbJMbBIgAl46LKighvM0PcfLIkAQOO8RvUqoboUwHTpANSjzQUoBw==;EndpointSuffix=core.windows.net"
+pictures_container_name: "pictures"
+source_folder: "D:/Users/50048815/OneDrive - ArcelorMittal/Learning and Knowledge/Maks detection/Face-Mask-Detection-master/Upload imgs to blob"
