@@ -1,0 +1,3 @@
+- Eu falo "Alexa, adicionar maça um zero quatro na lista de tarefas"
+- O IFTTT adiciona na Google Sheet "Amazon Alexa/alexa-food" uma linha com duas colunas: data e item inserido na lista de tarefas pela alexa
+- Uma Azure Function App lê as linhas da planilha, formata e salva na google sheet 'fin.xlsx'e deleta as linhas da Google Sheet "alexa-food" (fct.ipynb)

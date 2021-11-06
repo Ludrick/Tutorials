@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fct-food-consumption-track",
+  "private_key_id": "f82556e09f0e267a172b54b4cd40fdde1194a527",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkQ8mvlu3lMho9\nipo3p4LtpZbFNIjpQSutecph0nFEXT178zAWUsoFNITVNSx43j1u2ZSeZR834SdH\nfYbsEYYlkCveIRDlMo5uKMiFRZ+CCWmw0hyObbRkHYqHnHUhGMvVVPQ/eviz0ahZ\njM1eXOn44dnN/8R0zUYuSv1g62YLHH/KQAvrg/6YymBVJYS/tnBeYberIPdshRHh\ntWKbr9ngIF+ttMmtAmEHF3zWou8CpD2J0u0hmDzyGLANb1idXr5IziNa7e7ZEf+6\nBmaA9UFxJzOrl8ZxwwAJc/MXySV1rF6gPC7aCxRiEBtuP5ZRK1Vwsw2zCID5HPxG\nynA0xyEJAgMBAAECggEAAOPkfWueJBkBPxEiZH0naVNK6GGwVkHwqH2ET8MSCGf6\n89ItvLPmfWBl/I56Ybij8OxZRlck9AASiZbQEDUeGtOtBoSmW0pKrvp7RQxLYNXd\nOUSXkVwIghG46k2PmEYn9fgtD1pYFl1jV1eQgLDp4bE+UBlRPr14DRCB+Vr9Or/Y\nD9MCvNVx4Y+PeWPDoheWKNDQ4HgQQSoA6EIang0j5rFT29RpyNtAlB1Labm2zNrD\nzbtqLThbjPFoW+5UmHfkxDpFQNPrPsZT2Ph+TkXJ7Vecenw/yd6Wsvss2ZMjuDQq\nJDi6nKJpVSJV+Rsgt6EBGMXimg8qqUGUNOB8Xh8OqwKBgQDbVShj2xpegLm/4F1J\nhnwzxMBAkipMoYyFV4oEvp85iID9MysPQCqWXIPigA4rMcq+q7NEhL2BhpUPNYw5\nXFMkPheL4rMi/ut0ujqoKUx8PdZ7kcYTCfVM+AvEoxkGRsNDjtFo2e3uv0OVzL3x\nN3KFiV9BLZ4QM2e8sIGLgTzhxwKBgQC/ueAcdqINaNXbegQpES973BTF0YdDrRzG\n+aSrPID7wzcxl4ivTIBDQRKP31G2jUnx1erd2pPHk6sNzHVNh5H6x8X7d92FjkuT\nUEdHlLzttd7X/HaQXJmDU1RchrceGEoLDW0OTEKm3U05v/J0n2N57hFWHJZ9cRUj\n3lhVjDDmrwKBgH3URw2yf1hEBUx9DUfHLa4NbDYfJME91P4SkI3URkiddVLNbiCb\nsVL91HO2/2nscOIeYwQmGwoaCZ3mHIIz40bhkGSiNB8ZnD8lL82Vk9mbKFdP9BCs\nH9x+WVIAN7UQF6nEX4MFs6jKdZ2VDks6gir1+n3MC+hDdXoc0NUV2bW1AoGAWwXa\nGmlQImGlNl/FXeHk0z73Nbt2JnEnemfG/+znp59UstyobeE5+7QHJfr2Bl8pvgC7\nUryU8GlxCkoJXteAPLlfizWrG98kjjnMvXUmBQ0VUSFxALSVxT1ojcz/XvBVJs4m\n+mTGOAZUxZgVeby6M4cM//7ui3uGd9L1yReXl80CgYBPKzbvhGyXk2asQsnS5Xyx\npw9ef7eI2rQ63HnOMXAJxE0xOMVgnIAU3Qq+8VnXi3N/kgUm/s5L1DQiU8FBL8o+\nY3OTqko18fJE4Mr72JnmwzX0kjnenO4eQMGjCby8FJOA/yC5rtN5Wav4AyrVQTAI\nC0D2W+VDGaGo+QHe8JNN8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "contalucapisheet@fct-food-consumption-track.iam.gserviceaccount.com",
+  "client_id": "108906138123615077321",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/contalucapisheet%40fct-food-consumption-track.iam.gserviceaccount.com"
+}
