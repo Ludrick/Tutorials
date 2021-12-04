@@ -1,0 +1,47 @@
+{
+	"name": "Ursos1000SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedUrsos1000",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "tipo",
+				"type": "varchar"
+			},
+			{
+				"name": "sexo",
+				"type": "varchar"
+			},
+			{
+				"name": "adip",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "altura",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "peso",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Ursos1000"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
