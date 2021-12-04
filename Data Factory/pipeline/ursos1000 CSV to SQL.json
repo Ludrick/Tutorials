@@ -142,7 +142,14 @@
 			{
 				"name": "Bakup SQL to CSV",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -191,14 +198,112 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"FileName": {
-								"value": "@concat('bkp-', utcnow())",
+								"value": "@concat('bkp-', variables('FileNamePipe'))",
 								"type": "Expression"
 							}
 						}
 					}
 				]
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Bakup SQL to CSV_copy1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileNamePipe",
+					"value": "bbb"
+				}
+			},
+			{
+				"name": "Bakup SQL to CSV_copy1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Set variable1_copy1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "PreserveHierarchy"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Ursos1000SQL",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Ursos1000CSV",
+						"type": "DatasetReference",
+						"parameters": {
+							"FileName": {
+								"value": "@concat('bkp-', variables('FileNamePipe'))",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Set variable1_copy1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileNamePipe",
+					"value": "aaa"
+				}
 			}
 		],
+		"variables": {
+			"FileNamePipe": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2021-12-04T15:04:31Z"
 	},
