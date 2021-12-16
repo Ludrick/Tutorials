@@ -4,7 +4,8 @@
 		"description": "Alimentar urs.Schema sem limpar registros atuais.",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Preencher dUrso",
+				"description": "Limpar urs.dUrso e copiar SCV para SQL",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -28,7 +29,9 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "AzureSqlSink",
+						"preCopyScript": "DELETE FROM urs.dUrso",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
