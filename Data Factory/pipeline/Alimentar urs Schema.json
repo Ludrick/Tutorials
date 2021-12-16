@@ -123,6 +123,127 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Preencher dVacina",
+				"description": "Limpar urs.dUrso e copiar SCV para SQL",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "DELETE FROM urs.dVacina",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Tipo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Tipo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Sexo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Sexo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Imc",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Imc",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 5
+								}
+							},
+							{
+								"source": {
+									"name": "Altura",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Altura",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 3
+								}
+							},
+							{
+								"source": {
+									"name": "Peso",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Peso",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 6
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "CSVdVacina",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SQLdVacina",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"folder": {
