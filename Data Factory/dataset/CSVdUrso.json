@@ -37,15 +37,15 @@
 			},
 			{
 				"name": "Imc",
-				"type": "Decimal"
+				"type": "String"
 			},
 			{
 				"name": "Altura",
-				"type": "Decimal"
+				"type": "String"
 			},
 			{
 				"name": "Peso",
-				"type": "Integer"
+				"type": "String"
 			}
 		]
 	}

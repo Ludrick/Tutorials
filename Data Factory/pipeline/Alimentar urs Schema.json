@@ -4,7 +4,7 @@
 		"description": "Alimentar urs.Schema sem limpar registros atuais.",
 		"activities": [
 			{
-				"name": "Copy dUrso",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -34,18 +34,6 @@
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
-							{
-								"source": {
-									"name": "UrsoId",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "UrsoId",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
 							{
 								"source": {
 									"name": "Tipo",
