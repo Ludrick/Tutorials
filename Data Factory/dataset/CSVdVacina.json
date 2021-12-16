@@ -1,5 +1,5 @@
 {
-	"name": "dVacinaCSV",
+	"name": "CSVdVacina",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

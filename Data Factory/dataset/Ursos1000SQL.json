@@ -5,6 +5,9 @@
 			"referenceName": "linkedUrsos1000",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Ursos1000"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [

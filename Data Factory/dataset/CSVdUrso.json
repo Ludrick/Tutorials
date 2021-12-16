@@ -1,5 +1,5 @@
 {
-	"name": "dUrsoCSV",
+	"name": "CSVdUrso",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -24,7 +24,28 @@
 		},
 		"schema": [
 			{
+				"name": "UrsoId",
 				"type": "String"
+			},
+			{
+				"name": "Tipo",
+				"type": "String"
+			},
+			{
+				"name": "Sexo",
+				"type": "String"
+			},
+			{
+				"name": "Imc",
+				"type": "Decimal"
+			},
+			{
+				"name": "Altura",
+				"type": "Decimal"
+			},
+			{
+				"name": "Peso",
+				"type": "Integer"
 			}
 		]
 	}

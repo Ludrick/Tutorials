@@ -1,5 +1,5 @@
 {
-	"name": "fAplicacaoCSV",
+	"name": "CSVfAplicacao",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

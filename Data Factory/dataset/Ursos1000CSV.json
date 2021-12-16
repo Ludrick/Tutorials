@@ -10,6 +10,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "Ursos1000"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
