@@ -1,5 +1,12 @@
+### teste
 ~~~~sql
-update employee
-  set salary = salary * 2
-  where salary < 100000
+create table usuario
+nome string,
+idade int;
+~~~~
+
+~~~~sql
+create table usuario
+nome string,
+idade int;
 ~~~~
