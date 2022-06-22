@@ -8,6 +8,7 @@ nslookup stgbigdatadev01us.dfs.core.windows.net
 ~~~~Python
 # Listar Diretórios
 dbutils.fs.ls('/')
+display(dbutils.fs.ls('dbfs:/mnt/adls-container04/userdata/'))
 ~~~~
 
 ~~~~sql
