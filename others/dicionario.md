@@ -10,5 +10,8 @@ OCI GoldenGate é uma plataforma de malha de dados em tempo real, fornecendo um 
 **CDC:**<br>
 O Change Data Capture (CDC) é capaz de compreender processos que detectam as alterações feitas em uma tabela ou banco de dados de origem.  As linhas alteradas são movidas por meio da replicação de dados para um local de destino, exemplo, um Data Warehouse, Microsoft Azure, AWS, Oracle e entre outros. [more](https://www.mindtek.com.br/2021/09/voce-conhece-o-change-data-capture/)
 
+**MPP**<br>
+Processamento Paralelo em Massa 
+
 **Analytical Record:**<br>
 An analytical record is a logical view of all attributes corresponding to an entity. An analytical record may be decomposed into domains that group attributes related to each other. Ou seja, um tabelão (não modelado em fato-dimensão)
