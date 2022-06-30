@@ -53,3 +53,10 @@ dftotal['count'] = dftotal['count']-1
 dftotal.columns = ['table', 'bytes', 'partitions']
 dftotal
 ~~~~
+
+Transformar coluna Pyspark em List
+~~~~python
+# Transformar a coluna "tableName" da tabela "tables" em List
+tableList = [x["tableName"] for x in tables.rdd.collect()]
+tableList
+~~~~
